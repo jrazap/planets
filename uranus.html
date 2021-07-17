@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Antonio&family=Spartan:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="/css/style.css"> 
+  <script src="https://kit.fontawesome.com/f6ba9ab941.js" crossorigin="anonymous"></script>
+  <title>Planets facts | Uranus</title>
+</head>
+<body>
+  <nav role="navigation">
+    <div class="nav_top">
+      <div class="nav_inner_wrapper">
+        <h2>The Planets</h2>
+        <button aria-label="mobile-menu" class="hamburger" id="hamburger"><i id="icon" class="fas fa-bars"></i></button>
+      </div>
+    </div>
+    <ul id="nav_menu" class="nav_menu">
+      <li class="list_item" data-name="mercury">
+        <a href="./index.html">
+        <div class="menu_item">
+          <div class="planet_menu_group">
+            <div class="circle mercury-color"></div>
+            <p >Mercury</p>
+          </div>
+          <i class="fas fa-angle-right"></i>
+        </div>
+      </a></li>
+      <div class="list_break"></div>
+      <li class="list_item" data-name="venus"><a href="./venus.html">
+        <div class="menu_item">
+          <div class="planet_menu_group">
+            <div class="circle venus-color"></div>
+            <p>Venus</p>
+          </div>
+          <i class="fas fa-angle-right"></i>
+        </div>
+      </a></li>
+      <div class="list_break"></div>
+      <li class="list_item" data-name="earth"><a href="./earth.html">
+        <div class="menu_item">
+          <div class="planet_menu_group">
+            <div class="circle earth-color"></div>
+            <p>Earth</p>
+          </div>
+          <i class="fas fa-angle-right"></i>
+        </div>
+      </a></li>
+      <div class="list_break"></div>
+      <li class="list_item" data-name="mars"><a href="./mars.html">
+        <div class="menu_item">
+          <div class="planet_menu_group">
+            <div class="circle mars-color"></div>
+            <p>Mars</p>
+          </div>
+          <i class="fas fa-angle-right"></i>
+        </div>
+      </a></li>
+      <div class="list_break"></div>
+      <li class="list_item" data-name="jupiter"><a href="./jupiter.html">
+        <div class="menu_item">
+          <div class="planet_menu_group">
+            <div class="circle jupiter-color"></div>
+            <p>Jupiter</p>
+          </div>
+          <i class="fas fa-angle-right"></i>
+        </div>
+      </a></li>
+      <div class="list_break"></div>
+      <li class="list_item" data-name="saturn"><a href="./saturn.html">
+        <div class="menu_item">
+          <div class="planet_menu_group">
+            <div class="circle saturn-color"></div>
+            <p>Saturn</p>
+          </div>
+          <i class="fas fa-angle-right"></i>
+        </div>
+      </a></li>
+      <div class="list_break"></div>
+      <li class="list_item" data-name="uranus"><a href="./uranus.html">
+        <div class="menu_item">
+          <div class="planet_menu_group">
+            <div class="circle uranus-color"></div>
+            <p>Uranus</p>
+          </div>
+          <i class="fas fa-angle-right"></i>
+        </div>
+      </a></li>
+      <div class="list_break"></div>
+      <li class="list_item" data-name="neptune"><a href="./neptune.html">
+        <div class="menu_item">
+          <div class="planet_menu_group">
+            <div class="circle neptune-color"></div>
+            <p>Neptune</p>
+          </div>
+          <i class="fas fa-angle-right"></i>
+        </div>
+      </a></li>
+    </ul>
+  </nav>
+  <main id="6" class="planet_main planet_highlights">
+
+    <div class="tabs planet_buttons_wrapper item-buttons">
+      <div role="tablist" aria-label="Planet Information" class="planet_details_buttons">
+        <button role="tab" id="overview_tab" aria-selected="true" data-name="uranus--btn"><span class="number_opacity">01</span>Overview</button>
+        <button role="tab" id="structure_tab" aria-selected="false" data-name="uranus--btn"><span class="number_opacity">02</span><span class="tab_desk_vis">Internal </span>Structure</button>
+        <button role="tab" id="surface_tab"
+        aria-selected="false" data-name="uranus--btn"><span class="number_opacity">03</span>Surface<span class="tab_desk_vis"> Geology</span></button>
+      </div>
+    </div>
+
+    <div id="overview-img" class="overview item-image" role="tabpanel" aria-labelledby="overview_tab" >
+    </div>
+
+    <div id="overview" class="overview item-info" role="tabpanel" aria-labelledby="overview_tab" >
+      </div>
+
+    <div id="structure-img" class="structure item-image" role="tabpanel" aria-labelledby="structure_tab" hidden>
+    </div>
+
+    <div id="structure" class="structure item-info" role="tabpanel" aria-labelledby="structure_tab" hidden>
+    </div>
+
+    <div id="geology-img" class="geology item-image" role="tabpanel" aria-labelledby="surface_tab" hidden>
+    </div>
+
+    <div id="geology" class="geology item-info" role="tabpanel" aria-labelledby="surface_tab" hidden>
+    </div>
+
+  </main>
+  <aside id="metaData" class="planet_details">
+  </aside>
+  <script src="/./js/script.js"></script>
+</body>
+</html>
