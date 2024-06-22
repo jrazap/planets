@@ -30,9 +30,9 @@ export const dataState = atom({
       radius: "2,439.7 KM",
       temperature: "430°c",
       images: {
-        planet: "/img/planet-mercury.svg",
-        internal: "/img/planet-mercury-internal.svg",
-        geology: "/img/geology-mercury.png",
+        planet: "/assets/planet-mercury.svg",
+        internal: "/assets/planet-mercury-internal.svg",
+        geology: "/assets/geology-mercury.webp",
       },
     },
     {
@@ -60,9 +60,9 @@ export const dataState = atom({
       radius: "6,051.8 KM",
       temperature: "471°c",
       images: {
-        planet: "/img/planet-venus.svg",
-        internal: "/img/planet-venus-internal.svg",
-        geology: "/img/geology-venus.png",
+        planet: "/assets/planet-venus.svg",
+        internal: "/assets/planet-venus-internal.svg",
+        geology: "/assets/geology-venus.webp",
       },
     },
     {
@@ -90,9 +90,9 @@ export const dataState = atom({
       radius: "6,371 KM",
       temperature: "16°c",
       images: {
-        planet: "/img/planet-earth.svg",
-        internal: "/img/planet-earth-internal.svg",
-        geology: "/img/geology-earth.png",
+        planet: "/assets/planet-earth.svg",
+        internal: "/assets/planet-earth-internal.svg",
+        geology: "/assets/geology-earth.webp",
       },
     },
     {
@@ -120,9 +120,9 @@ export const dataState = atom({
       radius: "3,389.5 KM",
       temperature: "-28°c",
       images: {
-        planet: "/img/planet-mars.svg",
-        internal: "/img/planet-mars-internal.svg",
-        geology: "/img/geology-mars.png",
+        planet: "/assets/planet-mars.svg",
+        internal: "/assets/planet-mars-internal.svg",
+        geology: "/assets/geology-mars.webp",
       },
     },
     {
@@ -151,9 +151,9 @@ export const dataState = atom({
       radius: "69,911 KM",
       temperature: "-108°c",
       images: {
-        planet: "/img/planet-jupiter.svg",
-        internal: "/img/planet-jupiter-internal.svg",
-        geology: "/img/geology-jupiter.png",
+        planet: "/assets/planet-jupiter.svg",
+        internal: "/assets/planet-jupiter-internal.svg",
+        geology: "/assets/geology-jupiter.webp",
       },
     },
     {
@@ -181,9 +181,9 @@ export const dataState = atom({
       radius: "58,232 KM",
       temperature: "-138°c",
       images: {
-        planet: "/img/planet-saturn.svg",
-        internal: "/img/planet-saturn-internal.svg",
-        geology: "/img/geology-saturn.png",
+        planet: "/assets/planet-saturn.svg",
+        internal: "/assets/planet-saturn-internal.svg",
+        geology: "/assets/geology-saturn.webp",
       },
     },
     {
@@ -211,9 +211,9 @@ export const dataState = atom({
       radius: "25,362 KM",
       temperature: "-195°c",
       images: {
-        planet: "/img/planet-uranus.svg",
-        internal: "/img/planet-uranus-internal.svg",
-        geology: "/img/geology-uranus.png",
+        planet: "/assets/planet-uranus.svg",
+        internal: "/assets/planet-uranus-internal.svg",
+        geology: "/assets/geology-uranus.webp",
       },
     },
     {
@@ -241,9 +241,9 @@ export const dataState = atom({
       radius: "24,622 KM",
       temperature: "-201°c",
       images: {
-        planet: "/img/planet-neptune.svg",
-        internal: "/img/planet-neptune-internal.svg",
-        geology: "/img/geology-neptune.png",
+        planet: "/assets/planet-neptune.svg",
+        internal: "/assets/planet-neptune-internal.svg",
+        geology: "/assets/geology-neptune.webp",
       },
     },
   ],
