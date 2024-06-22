@@ -349,20 +349,25 @@ button:focus {
 .planetGeo__imgSize {
   margin: 0;
   padding: 0;
-  width: 8rem;
+  width: 6rem;
+}
+
+#geology-img {
+  position: relative;
 }
 
 #geo_stack_back {
   position: relative;
   z-index: -2;
 }
+
 #geo_stack_front {
   position: absolute;
+  top: 50%;
   z-index: 1;
-  transform: rotate(-45deg);
-  margin-left: -14%;
-  margin-top: 30%;
+  transform: translate(-100%, 0) rotate(-45deg);
 }
+
 //planet details tabs/buttons//
 .planet_detailsMenu {
   display: flex;
@@ -685,18 +690,7 @@ button:focus {
   .planetGeo__imgSize {
     margin: 0;
     padding: 0;
-    width: 14rem;
-  }
-  #geo_stack_back {
-    position: relative;
-    z-index: -2;
-  }
-  #geo_stack_front {
-    position: absolute;
-    z-index: 1;
-    transform: rotate(-45deg);
-    margin-left: -14%;
-    margin-top: 20%;
+    width: 12rem;
   }
 
   //additional details - doesnt change with button selection//
@@ -1065,19 +1059,7 @@ button:focus {
   .planetGeo__imgSize {
     margin: 0;
     padding: 0;
-    width: 14rem;
-  }
-
-  #geo_stack_back {
-    position: relative;
-    z-index: -2;
-  }
-  #geo_stack_front {
-    position: absolute;
-    z-index: 1;
-    transform: rotate(-45deg);
-    margin-left: -14%;
-    margin-top: 18%;
+    width: 12rem;
   }
 
   .planet_details {
