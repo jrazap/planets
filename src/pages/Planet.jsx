@@ -159,22 +159,22 @@ const Planet = ({ id, planet }) => {
       <aside id="metaData" className="planet_details planet_details_sub">
         <div className="planet_details_sub">
           <p className="subtitle">Rotation Time</p>
-          <h3>{data[id].rotation}</h3>
+          <p className="info">{data[id].rotation}</p>
         </div>
 
         <div className="planet_details_sub">
           <p className="subtitle">Revolution Time</p>
-          <h3>{data[id].revolution}</h3>
+          <p className="info">{data[id].revolution}</p>
         </div>
 
         <div className="planet_details_sub">
           <p className="subtitle">Radius</p>
-          <h3>{data[id].radius}</h3>
+          <p className="info">{data[id].radius}</p>
         </div>
 
         <div className="planet_details_sub">
           <p className="subtitle">Average Temp.</p>
-          <h3>{data[id].temperature}</h3>
+          <p className="info">{data[id].temperature}</p>
         </div>
       </aside>
     </>
