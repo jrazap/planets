@@ -1,4 +1,36 @@
+import { useEffect } from "react";
+
 const Tabs = ({ planet }) => {
+  useEffect(() => {
+    const tabs = document.querySelector(".tabs");
+    const tabButtons = tabs.querySelectorAll('[role="tab"]');
+    const tabPanels = Array.from(
+      document.querySelectorAll('[role="tabpanel"]')
+    );
+
+    const handleTabClick = (e) => {
+      tabPanels.forEach((panel) => {
+        panel.hidden = true;
+      });
+
+      tabButtons.forEach((tab) => {
+        tab.setAttribute("aria-selected", false);
+      });
+
+      e.currentTarget.setAttribute("aria-selected", true);
+      const { id } = e.currentTarget;
+      const tabPanel = tabPanels.filter(
+        (panel) => panel.getAttribute("aria-labelledby") === id
+      );
+      tabPanel.forEach((panel) => {
+        panel.hidden = false;
+      });
+    };
+
+    tabButtons.forEach((button) =>
+      button.addEventListener("click", handleTabClick)
+    );
+  });
   return (
     <div className="tabs planet_buttons_wrapper item-buttons">
       <div
