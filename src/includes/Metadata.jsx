@@ -4,27 +4,35 @@ import { dataState } from "../state";
 const Metadata = ({ id }) => {
   const data = useRecoilValue(dataState);
 
+  const information = [
+    {
+      title: "Rotation Time",
+      info: data[id].rotation,
+    },
+    {
+      title: "Revolution Time",
+      info: data[id].revolution,
+    },
+    {
+      title: "Radius",
+      info: data[id].radius,
+    },
+    {
+      title: "Average Temp.",
+      info: data[id].temperature,
+    },
+  ];
+
   return (
     <aside id="metaData" className="planet_details planet_details_sub">
-      <div className="planet_details_sub">
-        <p className="subtitle">Rotation Time</p>
-        <p className="info">{data[id].rotation}</p>
-      </div>
-
-      <div className="planet_details_sub">
-        <p className="subtitle">Revolution Time</p>
-        <p className="info">{data[id].revolution}</p>
-      </div>
-
-      <div className="planet_details_sub">
-        <p className="subtitle">Radius</p>
-        <p className="info">{data[id].radius}</p>
-      </div>
-
-      <div className="planet_details_sub">
-        <p className="subtitle">Average Temp.</p>
-        <p className="info">{data[id].temperature}</p>
-      </div>
+      {information.map((item, index) => {
+        return (
+          <div className="planet_details_sub" key={index}>
+            <p className="subtitle">{item.title}</p>
+            <p className="info">{item.info}</p>
+          </div>
+        );
+      })}
     </aside>
   );
 };

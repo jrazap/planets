@@ -1,6 +1,3 @@
-import { useEffect } from "react";
-import { useRecoilValue } from "recoil";
-import { dataState } from "../state";
 import Tabs from "../includes/Tabs";
 import Overview from "../includes/Overview";
 import Structure from "../includes/Structure";
@@ -8,9 +5,6 @@ import Geology from "../includes/Geology";
 import Metadata from "../includes/Metadata";
 
 const Planet = ({ id, planet }) => {
-
-  
-
   return (
     <>
       <main id={id} className="planet_main planet_highlights">
@@ -22,7 +16,7 @@ const Planet = ({ id, planet }) => {
 
         <Geology id={id} />
       </main>
-
+      
       <Metadata id={id} />
     </>
   );

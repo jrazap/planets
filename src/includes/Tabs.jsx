@@ -1,6 +1,30 @@
 import { useEffect } from "react";
 
 const Tabs = ({ planet }) => {
+  const btns = [
+    {
+      id: "overview_tab",
+      label: "Overview",
+      sub: "",
+      selected: true,
+      number: "01",
+    },
+    {
+      id: "structure_tab",
+      label: "Internal",
+      sub: "Structure",
+      selected: false,
+      number: "02",
+    },
+    {
+      id: "surface_tab",
+      label: "Surface",
+      sub: "Geology",
+      selected: false,
+      number: "03",
+    },
+  ];
+
   useEffect(() => {
     const tabs = document.querySelector(".tabs");
     const tabButtons = tabs.querySelectorAll('[role="tab"]');
@@ -31,6 +55,7 @@ const Tabs = ({ planet }) => {
       button.addEventListener("click", handleTabClick)
     );
   });
+
   return (
     <div className="tabs planet_buttons_wrapper item-buttons">
       <div
@@ -38,32 +63,21 @@ const Tabs = ({ planet }) => {
         aria-label="Planet Information"
         className="planet_details_buttons"
       >
-        <button
-          role="tab"
-          id="overview_tab"
-          aria-selected="true"
-          data-name={`${planet}--btn`}
-        >
-          <span className="number_opacity">01</span>Overview
-        </button>
-        <button
-          role="tab"
-          id="structure_tab"
-          aria-selected="false"
-          data-name={`${planet}--btn`}
-        >
-          <span className="number_opacity">02</span>
-          <span className="tab_desk_vis">Internal </span>Structure
-        </button>
-        <button
-          role="tab"
-          id="surface_tab"
-          aria-selected="false"
-          data-name={`${planet}--btn`}
-        >
-          <span className="number_opacity">03</span>Surface
-          <span className="tab_desk_vis"> Geology</span>
-        </button>
+        {btns.map((btn, index) => {
+          return (
+            <button
+              key={index}
+              role="tab"
+              id={btn.id}
+              aria-selected={btn.selected}
+              data-name={`${planet}--btn`}
+            >
+              <span className="number_opacity">{btn.number}</span>
+              {btn.label}
+              <span className="tab_desk_vis">{btn.sub}</span>
+            </button>
+          );
+        })}
       </div>
     </div>
   );
