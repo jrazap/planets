@@ -13,7 +13,6 @@ const router = createHashRouter([
     children: [
       {
         index: true,
-        // path: "mercury",
         element: <Planet id={0} planet="mercury" />,
       },
       {
