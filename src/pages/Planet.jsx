@@ -40,9 +40,10 @@ const Planet = ({ id, planet }) => {
   return (
     <>
       <main id={id} className="planet_main planet_highlights">
-        <Tabs planet={planet}/>
+        <Tabs planet={planet} />
 
-        <div id="overview-img"
+        <div
+          id="overview-img"
           className="overview item-image planet"
           role="tabpanel"
           aria-labelledby="overview_tab"
@@ -54,7 +55,8 @@ const Planet = ({ id, planet }) => {
           />
         </div>
 
-        <div id="overview"
+        <div
+          id="overview"
           className="overview item-info"
           role="tabpanel"
           aria-labelledby="overview_tab"
@@ -74,7 +76,8 @@ const Planet = ({ id, planet }) => {
           </p>
         </div>
 
-        <div id="structure-img"
+        <div
+          id="structure-img"
           className="structure item-image planet"
           role="tabpanel"
           aria-labelledby="structure_tab"
@@ -87,7 +90,8 @@ const Planet = ({ id, planet }) => {
           />
         </div>
 
-        <div id="structure"
+        <div
+          id="structure"
           className="structure item-info"
           role="tabpanel"
           aria-labelledby="structure_tab"
@@ -108,7 +112,8 @@ const Planet = ({ id, planet }) => {
           </p>
         </div>
 
-        <div id="geology-img"
+        <div
+          id="geology-img"
           className="geology item-image planet"
           role="tabpanel"
           aria-labelledby="surface_tab"
@@ -128,7 +133,8 @@ const Planet = ({ id, planet }) => {
           />
         </div>
 
-        <div id="geology"
+        <div
+          id="geology"
           className="geology item-info"
           role="tabpanel"
           aria-labelledby="surface_tab"
@@ -152,23 +158,23 @@ const Planet = ({ id, planet }) => {
 
       <aside id="metaData" className="planet_details planet_details_sub">
         <div className="planet_details_sub">
-        <h4>Rotation Time</h4>
-        <h3>{data[id].rotation}</h3>
+          <p className="subtitle">Rotation Time</p>
+          <h3>{data[id].rotation}</h3>
         </div>
 
         <div className="planet_details_sub">
-        <h4>Revolution Time</h4>
-        <h3>{data[id].revolution}</h3>
+          <p className="subtitle">Revolution Time</p>
+          <h3>{data[id].revolution}</h3>
         </div>
 
         <div className="planet_details_sub">
-        <h4>Radius</h4>
-        <h3>{data[id].radius}</h3>
+          <p className="subtitle">Radius</p>
+          <h3>{data[id].radius}</h3>
         </div>
-        
+
         <div className="planet_details_sub">
-        <h4>Average Temp.</h4>
-        <h3>{data[id].temperature}</h3>
+          <p className="subtitle">Average Temp.</p>
+          <h3>{data[id].temperature}</h3>
         </div>
       </aside>
     </>
