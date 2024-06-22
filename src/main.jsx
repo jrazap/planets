@@ -1,12 +1,12 @@
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 import LayoutComponent from "./layout";
 import Planet from "./pages/Planet";
 import "./main.scss";
 import { RecoilRoot } from "recoil";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <LayoutComponent />,
