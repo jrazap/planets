@@ -23,7 +23,7 @@ const Header = () => {
       <nav role="navigation">
         <div className="nav_top">
           <div className="nav_inner_wrapper">
-            <h2>The Planets</h2>
+            <h2>Planets Info</h2>
             <button
               aria-label="mobile-menu"
               className="hamburger"

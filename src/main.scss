@@ -96,6 +96,10 @@ html {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
 body {
   background-color: $color_darkBlue;
   background-image: url("/assets/background-stars.svg");
@@ -515,7 +519,7 @@ footer {
           display: none;
         }
         p {
-          font-size: 1.15rem;
+          font-size: 0.9rem;
         }
       }
       .planet_menu_group {
@@ -631,10 +635,7 @@ footer {
       "planet planet"
       "info buttons";
     margin: 0 2rem;
-    // flex-flow: column nowrap;
-    // justify-content: center;
-    // align-items: center;
-    // margin: 0rem;
+
     h1 {
       margin: 0.5rem 0;
     }
@@ -794,7 +795,7 @@ footer {
           display: none;
         }
         p {
-          font-size: 1rem;
+          font-size: .9rem;
         }
       }
       .planet_menu_group {
@@ -996,7 +997,7 @@ footer {
         font-size: 4rem;
       }
       p {
-        font-size: 1.2rem;
+        font-size: 1rem;
         line-height: 1.75rem;
       }
     }
