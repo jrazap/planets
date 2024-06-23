@@ -1,11 +1,11 @@
+import { useRecoilValue } from "recoil";
+import { dataState } from "../state";
 import { Helmet } from "react-helmet";
 import Tabs from "../includes/Tabs";
 import Overview from "../includes/Overview";
 import Structure from "../includes/Structure";
 import Geology from "../includes/Geology";
 import Metadata from "../includes/Metadata";
-import { useRecoilValue } from "recoil";
-import { dataState } from "../state";
 
 const Planet = ({ id, planet }) => {
   const data = useRecoilValue(dataState);

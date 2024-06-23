@@ -5,8 +5,6 @@ import { RecoilRoot } from "recoil";
 import router from "./router";
 import "./sass/main.scss";
 
-
-
 ReactDOM.createRoot(document.getElementById("root")).render(
   <RecoilRoot>
     <Suspense fallback={`<h1>Loading...<h1/>`}>

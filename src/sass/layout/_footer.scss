@@ -1,13 +1,15 @@
 //===========================================
 // Footer
 //===========================================
+$footerHeight: 50px;
 footer {
   .footer-content {
+    min-block-size: $footerHeight;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem;
     text-align: center;
+    margin: 1rem;
     p {
       font-family: "Spartan", sans-serif;
       color: $color_white;

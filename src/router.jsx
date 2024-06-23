@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Planet from "./pages/Planet";
 import LayoutComponent from "./layout";
+import NotFound from "./pages/Notfound";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "neptune",
         element: <Planet id={7} planet="neptune" />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
       },
     ],
   },

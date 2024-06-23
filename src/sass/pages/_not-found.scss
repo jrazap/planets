@@ -1,0 +1,17 @@
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-block-size: calc(100vh - $headerHeight - $footerHeight - 2rem);
+  .number {
+    @include font(600, 6rem, #fff);
+    margin-block-end: 0;
+  }
+  .status {
+    @include font(500, 3rem, #fff);
+    @include media(sm) {
+      font-size: 2.5rem;
+    }
+  }
+}
