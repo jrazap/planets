@@ -1,0 +1,181 @@
+//===========================================
+// Determines size and margin of planet images
+//===========================================
+.item-image {
+  .planet {
+    margin: 2rem 0 1.5rem 0;
+  }
+  .Mercury {
+    width: 12rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .Venus {
+    width: 18.625rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .Earth {
+    width: 14.81rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .Mars {
+    width: 12rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .Jupiter {
+    width: 15rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .Saturn {
+    width: 17rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .Uranus {
+    width: 15rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .Neptune {
+    width: 15.81rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.planetGeo__imgSize {
+  margin: 0;
+  padding: 0;
+  width: 6rem;
+}
+
+#geology-img {
+  position: relative;
+}
+
+#geo_stack_back {
+  position: relative;
+  z-index: -2;
+}
+
+#geo_stack_front {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  transform: translate(-100%, 0) rotate(-45deg);
+}
+
+@media screen and (min-width: 699px) and (max-width: 1024px) {
+  .planet {
+    margin: 0;
+
+    .Mercury {
+      width: 20rem;
+      margin-bottom: 3rem;
+    }
+
+    .Venus {
+      width: 20.625rem;
+      margin-bottom: 3rem;
+    }
+
+    .Earth {
+      width: 21.81rem;
+      margin-bottom: 3rem;
+    }
+
+    .Mars {
+      width: 19.06rem;
+      margin-bottom: 3rem;
+    }
+
+    .Jupiter {
+      width: 25rem;
+      margin-bottom: 3rem;
+    }
+
+    .Saturn {
+      width: 26rem;
+      margin-bottom: 3rem;
+    }
+
+    .Uranus {
+      width: 22rem;
+      margin-bottom: 3rem;
+    }
+
+    .Neptune {
+      width: 21.81rem;
+      margin-bottom: 3rem;
+    }
+  }
+  
+  .planetGeo__imgSize {
+    margin: 0;
+    padding: 0;
+    width: 12rem;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 3840px) {
+  .planet {
+    .Mercury {
+      width: 25.93rem;
+      margin-bottom: 3rem;
+      z-index: -2;
+      align-self: center;
+      justify-self: center;
+    }
+
+    .Venus {
+      width: 29.625rem;
+      margin-bottom: 3rem;
+    }
+
+    .Earth {
+      width: 29.81rem;
+      margin-bottom: 3rem;
+      z-index: -2;
+    }
+
+    .Mars {
+      width: 27.06rem;
+      margin-bottom: 3rem;
+      z-index: -2;
+    }
+
+    .Jupiter {
+      width: 33rem;
+      margin-bottom: 3rem;
+      z-index: -2;
+    }
+
+    .Saturn {
+      width: 34rem;
+      margin-bottom: 3rem;
+      z-index: -2;
+    }
+
+    .Uranus {
+      width: 30rem;
+      margin-bottom: 3rem;
+      z-index: -2;
+    }
+
+    .Neptune {
+      width: 29.81rem;
+      margin-bottom: 3rem;
+      z-index: -2;
+    }
+  }
+
+  .planetGeo__imgSize {
+    margin: 0;
+    padding: 0;
+    width: 12rem;
+  }
+}

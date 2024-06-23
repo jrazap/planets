@@ -1,0 +1,206 @@
+//===========================================
+// Mobile only buttons
+//===========================================
+.planet_buttons_wrapper {
+  border-top: 1.5px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.25);
+  width: 100vw;
+  margin: 1.5rem;
+}
+
+.planet_details_buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 1rem;
+}
+
+button {
+  padding: 1rem 0rem;
+  border-bottom: 3px solid none;
+  color: $color_white;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+}
+
+button:hover {
+  padding: 1rem 0;
+}
+
+button[aria-selected="true"] {
+  opacity: 1;
+  border-bottom: 3px solid $color_aqua;
+}
+
+button[aria-selected="false"] {
+  opacity: 0.5;
+}
+
+button:focus {
+  outline: 0;
+  color: $color_white;
+}
+
+.number_opacity {
+  display: none;
+}
+
+.tab_desk_vis {
+  display: none;
+}
+
+@media screen and (min-width: 699px) and (max-width: 1024px) {
+  .planet_buttons_wrapper {
+    width: 40vw;
+    margin: 1.5rem;
+    order: 2;
+    border: none;
+  }
+
+  .planet_details_buttons {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  button {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: $color_white;
+    background-color: transparent;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: left;
+    margin-left: 0vw;
+  }
+
+  button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 1rem;
+  }
+
+  button[aria-selected="true"] {
+    opacity: 1;
+    background-color: $color_aqua;
+  }
+
+  button[aria-selected="false"] {
+    opacity: 0.5;
+  }
+
+  button:focus {
+    outline: 0;
+    color: $color_white;
+  }
+
+  .number_opacity {
+    opacity: 0.5;
+    padding-right: 1rem;
+    display: block;
+  }
+
+  .tab_desk_vis {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 3840px) {
+  .planet_buttons_wrapper {
+    width: 40vw;
+    margin: 0;
+    border: none;
+  }
+
+  .planet_details_buttons {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+  }
+
+  button {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: $color_white;
+    background-color: transparent;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: left;
+    margin-left: 0vw;
+    font-size: 1.25rem;
+  }
+
+  button[aria-selected="true"] {
+    opacity: 1;
+    border: 1px solid transparent;
+  }
+
+  button[aria-selected="false"] {
+    opacity: 1;
+    background-color: transparent;
+    color: white;
+  }
+
+  [data-name="mercury--btn"] {
+    background-color: $color_aqua;
+  }
+  [data-name="venus--btn"] {
+    background-color: $color_venus;
+  }
+  [data-name="earth--btn"] {
+    background-color: $color_earth;
+  }
+  [data-name="mars--btn"] {
+    background-color: $color_mars;
+  }
+  [data-name="jupiter--btn"] {
+    background-color: $color_jupiter;
+  }
+  [data-name="saturn--btn"] {
+    background-color: $color_saturn;
+  }
+  [data-name="uranus--btn"] {
+    background-color: $color_uranus;
+  }
+  [data-name="neptune--btn"] {
+    background-color: $color_neptune;
+  }
+
+  button:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 1rem 1.5rem;
+    border: 1px solid transparent;
+  }
+
+  button:focus {
+    outline: 0;
+    color: $color_white;
+  }
+  .number_opacity {
+    opacity: 0.5;
+    padding-right: 1rem;
+    display: block;
+  }
+  .tab_desk_vis {
+    display: block;
+  }
+}

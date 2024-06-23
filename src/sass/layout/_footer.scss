@@ -1,0 +1,21 @@
+//===========================================
+// Footer
+//===========================================
+footer {
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    text-align: center;
+    p {
+      font-family: "Spartan", sans-serif;
+      color: $color_white;
+      font-size: 0.8rem;
+      a {
+        color: $color_white;
+        text-decoration: none;
+      }
+    }
+  }
+}

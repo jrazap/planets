@@ -1,0 +1,327 @@
+//===========================================
+// Navigation Menu
+//===========================================
+nav {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    width: 1.5rem;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  .nav_top {
+    width: 100%;
+  }
+
+  .nav_inner_wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    //hamburger menu button//
+    button {
+      background-color: transparent;
+      color: $color_white;
+      border: none;
+      width: 1.5rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  .nav_menu {
+    display: none;
+
+    .menu_item {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 88vw;
+
+      i {
+        opacity: 0.5;
+      }
+    }
+
+    .planet_menu_group {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+      p {
+        margin: 0.5rem;
+      }
+    }
+
+    .circle {
+      width: 1rem;
+      height: 1rem;
+      border-radius: 100%;
+    }
+
+    li {
+      list-style-type: none;
+      cursor: pointer;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      margin: 0;
+    }
+
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+
+    .list_break {
+      background-color: rgba(255, 255, 255, 0.15);
+      height: 1.5px;
+      width: 90%;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .show {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100vw;
+    padding: 1rem 0 0;
+    border-top: 1.5px solid rgba(255, 255, 255, 0.15);
+  }
+}
+
+@media screen and (min-width: 699px) and (max-width: 1024px) {
+  nav {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      margin: 0;
+    }
+
+    .nav_top {
+      width: 100%;
+    }
+
+    .nav_inner_wrapper {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem;
+
+      //hamburger menu button
+      button {
+        display: none;
+      }
+    }
+
+    //hide nav menu unless triggered by click in JS
+    .nav_menu {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      width: 100%;
+      margin: 1rem;
+      padding: 1rem 0 0;
+      border-top: 1.5px rgba(255, 255, 255, 0.15);
+
+      .menu_item {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 10%;
+
+        i {
+          display: none;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+      }
+
+      .planet_menu_group {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+        p {
+          margin: 0.5rem;
+        }
+      }
+
+      .circle {
+        display: none;
+      }
+
+      li {
+        list-style-type: none;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.15);
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        margin: 0;
+      }
+
+      .hamburger {
+        display: none;
+      }
+
+      .list_break {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 3840px) {
+  nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    h2 {
+      margin: 0;
+    }
+
+    .nav_top {
+      width: 80%;
+    }
+
+    .nav_inner_wrapper {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 0 1.5rem 1rem;
+
+      //hamburger menu button//
+      button {
+        display: none;
+      }
+    }
+
+    //hide nav menu unless triggered by click in JS//w
+    .nav_menu {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 1rem;
+      width: 80%;
+      margin: 0 1.5rem 1rem;
+      padding: 0;
+
+      .menu_item {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 10%;
+
+        i {
+          display: none;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+      }
+
+      .planet_menu_group {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+
+        p {
+          margin: 0.5rem;
+        }
+      }
+
+      .circle {
+        display: none;
+      }
+
+      li {
+        list-style-type: none;
+        cursor: pointer;
+        border-top: 5px solid transparent;
+        padding-top: 1rem;
+        opacity: 0.8;
+
+        &:hover {
+          opacity: 1;
+          padding-top: 1rem;
+        }
+      }
+
+      [data-name="mercury"]:hover {
+        border-top-color: $color_aqua;
+      }
+      [data-name="venus"]:hover {
+        border-top-color: $color_venus;
+      }
+      [data-name="earth"]:hover {
+        border-top-color: $color_earth;
+      }
+      [data-name="mars"]:hover {
+        border-top-color: $color_mars;
+      }
+      [data-name="jupiter"]:hover {
+        border-top-color: $color_jupiter;
+      }
+      [data-name="saturn"]:hover {
+        border-top-color: $color_saturn;
+      }
+      [data-name="uranus"]:hover {
+        border-top-color: $color_uranus;
+      }
+      [data-name="neptune"]:hover {
+        border-top-color: $color_neptune;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        margin: 0;
+      }
+
+      .hamburger {
+        display: none;
+      }
+
+      .list_break {
+        display: none;
+      }
+    }
+  }
+}

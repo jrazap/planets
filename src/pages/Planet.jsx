@@ -16,6 +16,7 @@ const Planet = ({ id, planet }) => {
         <Helmet>
           <title>Planets Info | {data[id].name}</title>
         </Helmet>
+
         <Tabs planet={planet} />
 
         <Overview id={id} />

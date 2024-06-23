@@ -1,0 +1,91 @@
+//===========================================
+// Planet main content
+//===========================================
+.planet_main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.5rem;
+  h1 {
+    margin: 0.5rem 0;
+  }
+}
+
+@media screen and (min-width: 699px) and (max-width: 1024px) {
+  .planet_main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "planet planet"
+      "info buttons";
+    margin: 0 2rem;
+
+    h1 {
+      margin: 0.5rem 0;
+    }
+
+    .item-image {
+      grid-area: planet;
+      justify-self: center;
+    }
+    .item-info {
+      grid-area: info;
+      // grid-area: info-section;
+      justify-self: left;
+      width: 100%;
+      text-align: left;
+    }
+    .item-buttons {
+      grid-area: buttons;
+      justify-self: center;
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 3840px) {
+  .planet_main {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1.25fr 1fr;
+    grid-template-areas:
+      "planet info"
+      "planet buttons";
+    margin-inline: 6rem;
+
+    h1 {
+      margin: 0.5rem 0;
+    }
+
+    .item-image {
+      grid-area: planet;
+      justify-self: center;
+      align-self: center;
+    }
+
+    .item-info {
+      grid-area: info;
+      justify-self: stretch;
+      width: 100%;
+      text-align: left;
+      margin-top: 3rem;
+
+      h1 {
+        padding-bottom: 1rem;
+        font-size: 4rem;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 1.75rem;
+      }
+    }
+    .item-buttons {
+      grid-area: buttons;
+      justify-self: stretch;
+      align-self: left;
+      width: 100%;
+    }
+  }
+}

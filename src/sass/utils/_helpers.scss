@@ -1,0 +1,66 @@
+//===========================================
+// Planet Name Colors
+//===========================================
+.mercury-color {
+  background-color: $color_aqua;
+}
+.venus-color {
+  background-color: $color_venus;
+}
+.earth-color {
+  background-color: $color_earth;
+}
+.mars-color {
+  background-color: $color_mars;
+}
+.jupiter-color {
+  background-color: $color_jupiter;
+}
+.saturn-color {
+  background-color: $color_saturn;
+}
+.uranus-color {
+  background-color: $color_uranus;
+}
+.neptune-color {
+  background-color: $color_neptune;
+}
+
+//===========================================
+// Buttons Colors
+//===========================================
+.buttonSelected_0 {
+  background-color: $color_aqua;
+  font-weight: bold;
+}
+.buttonSelected_1 {
+  background-color: $color_venus;
+  color: #555555;
+  font-weight: bold;
+}
+.buttonSelected_2 {
+  background-color: $color_earth;
+  font-weight: bold;
+}
+.buttonSelected_3 {
+  background-color: $color_mars;
+  font-weight: bold;
+}
+.buttonSelected_4 {
+  background-color: $color_jupiter;
+  font-weight: bold;
+}
+.buttonSelected_5 {
+  background-color: $color_saturn;
+  font-weight: bold;
+  color: #555555;
+}
+.buttonSelected_6 {
+  background-color: $color_uranus;
+  font-weight: bold;
+  color: #555555;
+}
+.buttonSelected_7 {
+  background-color: $color_neptune;
+  font-weight: bold;
+}

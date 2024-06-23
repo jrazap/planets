@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
 import { RecoilRoot } from "recoil";
 import router from "./router";
-import "./main.scss";
+import "./sass/main.scss";
 
 
 
